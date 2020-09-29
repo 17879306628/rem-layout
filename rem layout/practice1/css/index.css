@@ -1,0 +1,170 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    width: 10rem;
+    line-height: 1.5;
+    background-color: #fff;
+    font-family: Arial, Helvetica;
+}
+a {
+    text-decoration: none;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  /* 这个插件默认的html文字大小为cssroot 16px  */
+  /* 因此要修改文字大小 */
+  /* 如果我们的屏幕超过了750px  那么我们就按照750的设计稿去走，不会让我们页面超过750px    */
+  @media screen and (min-width: 750px) {
+    html {
+      font-size: 75px !important;
+    }
+  }
+nav {
+    display: flex;
+    width: 8.933333rem;
+    height: 1.173333rem;
+    justify-content: space-between;
+    
+    
+    margin: .4rem .453333rem .333333rem .493333rem;
+}
+nav a {
+    width: 2.773333rem;
+    height: 1.173333rem;
+    background-color: #fddf00;
+    text-align: center;
+    line-height: 1.173333rem;
+    font-size: .373333rem;
+    color: #000;
+    border-radius: .266667rem;
+}
+nav a:hover {
+    background-color: #003a9b;
+    color: #fff;
+}
+/* 店铺推荐模块制作 */
+.tuijian {
+
+    width: 10rem;
+    
+}
+.tuijian .wenzi {
+    width: 8.933333rem;
+    font-size: .533333rem;
+    color: #000;
+    margin-left: .493333rem;
+    margin-bottom: .573333rem;
+}
+.sales-hd {
+    display: flex;
+    width: 8.933333rem;
+    
+    
+    justify-content: space-between;
+    margin-left: .493333rem;
+    
+}
+.sales-hd li {
+    overflow: hidden;
+    position: relative;
+    width: 2.773333rem; 
+    
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: .266667rem;
+}
+
+.sales-hd li::after {
+    content: '';
+    position: absolute;
+    bottom: .173333rem;
+    right: .306667rem;
+    width: .653333rem;
+    height: .506667rem;
+    background: url(../images/shopcar.png) no-repeat;
+    background-size: .653333rem .506667rem;
+}
+.sales-hd li a {
+    display: flex;
+    flex-direction: column;
+    
+}
+.sales-hd li a  img {
+    width: 2.773333rem;
+    height: 1.866667rem;
+}
+.sales-hd li a .sales-icon img {
+    width: .373333rem;
+    height: .266667rem;
+    margin-top: .24rem;
+    margin-left: .2rem;
+}
+.sales-hd .sales-jieshao {
+    
+    margin-left: .2rem;
+    margin-top: .2rem;
+    font-size: .333333rem;
+}
+.sales-hd .sales-price {
+    
+    font-size: .4rem;
+    margin-left: .133333rem;
+}
+.sales-bd {
+    display: flex;
+    width: 8.933333rem;
+    justify-content: space-between;
+    margin-left: .493333rem;
+    margin-top: .266667rem;
+    flex-wrap: wrap;
+}
+.sales-bd li {
+    position: relative;
+    width: 4.266667rem;
+    
+    border: 1px solid #e7e7e7;
+    border-radius: .266667rem;
+    margin-bottom: .266667rem;
+}
+.sales-bd li::after {
+    content: '';
+    position: absolute;
+    bottom: .173333rem;
+    right: .306667rem;
+    width: .653333rem;
+    height: .506667rem;
+    background: url(../images/shopcar.png) no-repeat;
+    background-size: .653333rem .506667rem;
+}
+.sales-bd li a {
+    display: flex;
+    flex-direction: column;
+    
+}
+.sales-bd li a img {
+    width: 4.266667rem;
+    height: 3.133333rem;
+}
+.sales-bd li a .sales-icon img {
+    width: .373333rem;
+    height: .266667rem;
+    margin-top: .24rem;
+    margin-left: .2rem;
+}
+.sales-bd .sales-jieshao {
+    
+    margin-left: .2rem;
+    margin-top: .2rem;
+    font-size: .333333rem;
+}
+.sales-bd .sales-price {
+    
+    font-size: .4rem;
+    margin-left: .133333rem;
+}
+
